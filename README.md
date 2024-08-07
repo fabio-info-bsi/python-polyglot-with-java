@@ -54,3 +54,18 @@ A compilação do Windows tem vários problemas conhecidos:
 `graalpy -m pip install -r requirements.txt` or `graalpy -m ginstall install <package>==<version>`
 
 ---
+
+## Local Setup
+
+#### Build
+
+Java demo-app
+```shell
+mvn clean verify
+```
+
+#### Run
+Python 
+```shell
+graalpy --jvm --vm.cp=resources/polyglot/java/demo-app/target/demo-app.jar
+```
