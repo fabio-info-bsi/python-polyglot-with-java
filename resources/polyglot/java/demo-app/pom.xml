@@ -23,16 +23,6 @@
         <aws-encryption-sdk-java.version>2.4.0</aws-encryption-sdk-java.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-            <scope>provided</scope>
-        </dependency>
-
-    </dependencies>
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
