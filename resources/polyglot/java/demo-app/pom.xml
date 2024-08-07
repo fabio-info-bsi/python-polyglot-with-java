@@ -13,14 +13,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
-        <hotmart-datahub-version>3.3.5</hotmart-datahub-version>
-        <json-version>20190722</json-version>
-        <mockk-version>1.9.3</mockk-version>
-        <aws-sdk-version>2.20.102</aws-sdk-version>
-        <mockk-version>1.9.3</mockk-version>
-        <amazon-dax-client.version>1.0.230341.0</amazon-dax-client.version>
-        <aws-encryption-sdk-java.version>2.4.0</aws-encryption-sdk-java.version>
+        <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>
     </properties>
 
     <build>
@@ -29,7 +22,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>${maven.assembly.plugin.version}</version>
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
